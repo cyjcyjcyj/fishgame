@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tinyHeart</title>
+	<style type="text/css">
+       body{
+       		padding-top:10px;
+       }
+       .all_bg{
+			width:800px;
+			height: 800px;
+			margin:0 auto;
+       }
+       #allcanvas{
+       		position: relative;
+       		width:800px;
+       		height: 680px;
+       		margin:0 auto;
+       }
+       #canvas1{
+       		position:absolute;
+       		bottom: 0;
+       		left:0;
+       		z-index: 1;
+       }
+       #canvas2{
+       		position:absolute;
+       		bottom: 0;
+       		left:0;
+       		z-index: 0;
+       }
+       .rules{
+              color: red;
+              position: absolute;
+              top:10px;
+              left: 0;
+       }
+	</style>
+</head>
+<body>
+	<div class="all_bg">
+		<div id="allcanvas">
+			<canvas id="canvas1" width="800" height="600px"></canvas>
+			<canvas id="canvas2" width="800" height="600px"></canvas>
+                     <div class="rules">游戏规则:
+                     <p>用鼠标控制大鱼吃果实后喂小鱼，若长时间小鱼未进食则游戏结束，F5刷新。</p>
+                     </div>
+		</div>	
+              
+              
+	</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/commonFunctions.js"></script>
+	<script type="text/javascript" src="js/background.js"></script>
+	<script type="text/javascript" src="js/ane.js"></script>
+       <script type="text/javascript" src="js/fruit.js"></script>
+       <script type="text/javascript" src="js/mom.js"></script>
+       <script type="text/javascript" src="js/collision.js"></script>
+       <script type="text/javascript" src="js/baby.js"></script>
+       <script type="text/javascript" src="js/data.js"></script>
+       <script type="text/javascript" src="js/wave.js"></script>
+       <script type="text/javascript" src="js/halo.js"></script>
+        <script type="text/javascript" src="js/dust.js"></script>
+
+
+</body>
+</html>
